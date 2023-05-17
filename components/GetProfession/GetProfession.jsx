@@ -4,6 +4,7 @@ import icon1 from '../../public/icon-1.png'
 import icon2 from '../../public/icon-2.png'
 import icon3 from '../../public/icon-3.png'
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 
 const cards = [{
@@ -35,17 +36,33 @@ const GetProfession = () => {
         <>
             <div className={s.container}>
                 <div className={s.content}>
-                    <h1>Получите профессию прямо сейчас</h1>
+                    <motion.h1
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                          hidden: { scale: 0 },
+                          visible: { scale: 1 },
+                        }}
+                    >Получите профессию прямо сейчас</motion.h1>
                     <div className={s.cards}>
                         {cards.map((item) => (
-                            <div className={s.card}>
+                            <motion.div
+                            initial="hidden"
+                            transition={{ duration: 0.7 }}
+                            whileInView="visible"
+                            variants={{
+                              hidden: { scale: 0 },
+                              visible: { scale: 1 },
+                            }}
+                            className={s.card}>
                                 <Image src={item.img} alt="icon" />
                                 <h2>{item.name}</h2>
                                 <p>{item.title}</p>
-                            </div>
+                            </motion.div>
 
                         ))}
-                 
+
                     </div>
                 </div>
             </div>

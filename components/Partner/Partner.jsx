@@ -3,6 +3,7 @@ import s from './Partner.module.scss'
 import Image from 'next/image';
 import icon from '../../public/icon-Partner.png'
 import card from '../../public/Partner.png'
+import { motion } from 'framer-motion';
 
 const Partner = () => {
 
@@ -11,32 +12,109 @@ const Partner = () => {
     return (
         <div className={s.container}>
             <div className={s.content}>
-                <div className={s.name}>
+                <motion.div
+
+                    initial="hidden"
+                    transition={{ duration: 0.7 }}
+                    whileInView="visible"
+                    variants={{
+                        hidden: { scale: 0 },
+                        visible: { scale: 1 },
+                    }}
+
+                    className={s.name}>
                     <Image src={icon} alt="icon_partner" />
                     <h1>Партнеры - топовые бренды</h1>
-                </div>
+                </motion.div>
                 <div className={s.cards}>
-                    <div className={s.card}>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div>
-                    <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div>
-                    <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div>
-                    <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div>
-                    <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div> <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div> <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div> <div className={s.card}>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.card}>
                         <Image src={card} alt="card" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
