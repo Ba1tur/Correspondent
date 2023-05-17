@@ -20,3 +20,26 @@
     name: "секунд",
   },
 ];
+
+export const start = [
+  {
+    id: 1,
+    percentage: "100%",
+    img: "/100.png",
+  },
+  {
+    id: 2,
+    percentage: "75%",
+    img: "/75.png",
+  },
+  {
+    id: 3,
+    percentage: "50%",
+    img: "/50.png",
+  },
+  {
+    id: 4,
+    percentage: "Итог",
+    img: "/1.png",
+  },
+];

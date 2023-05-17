@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Hero from '@/components/Hero/Hero'
+import Start from '@/components/Start/Start'
+import Learn from '@/components/Learn/Learn'
 
 
 export default function Home() {
@@ -14,6 +16,13 @@ export default function Home() {
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
       <Hero />
+
+
+      <Start />
+
+
+
+      <Learn />
     </>
   )
 }
