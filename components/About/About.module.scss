@@ -7,7 +7,7 @@
     align-items: center;
     margin: 0 auto;
     gap: 10%;
-    padding: 80px 0 80px 0;
+    padding: 15% 0 10% 0;
     .images {
       img {
         width: 526px;
@@ -38,7 +38,7 @@
     }
   }
 }
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px) {
   .container {
     .content {
       .images {
@@ -48,21 +48,18 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 38px;
-     
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .container {
     .content {
-    gap: 7%;
+      gap: 7%;
 
       .images {
         img {
@@ -71,13 +68,10 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 30px;
-     
         }
-        p{
+        p {
           font-size: 14px;
         }
       }
@@ -85,8 +79,7 @@
   }
 }
 
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .container {
     .content {
       .images {
@@ -96,13 +89,10 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 25px;
-     
         }
-        p{
+        p {
           font-size: 13px;
         }
       }
@@ -110,7 +100,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .container {
     .content {
       flex-direction: column;
@@ -122,13 +112,10 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 32px;
-     
         }
-        p{
+        p {
           font-size: 16px;
         }
       }
@@ -136,8 +123,7 @@
   }
 }
 
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .container {
     .content {
       .images {
@@ -147,13 +133,10 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 28px;
-     
         }
-        p{
+        p {
           font-size: 14px;
         }
       }
@@ -161,8 +144,7 @@
   }
 }
 
-
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .container {
     .content {
       .images {
@@ -172,13 +154,10 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 25px;
-     
         }
-        p{
+        p {
           font-size: 14px;
         }
       }
@@ -186,9 +165,7 @@
   }
 }
 
-
-
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .container {
     .content {
       .images {
@@ -198,13 +175,10 @@
         }
       }
       .title {
-      
         h1 {
-        
           font-size: 22px;
-     
         }
-        p{
+        p {
           font-size: 13px;
         }
       }

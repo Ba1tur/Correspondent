@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import About from '@/components/About/About'
 import GetProfession from '@/components/GetProfession/GetProfession'
+import Partner from '@/components/Partner/Partner'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <About/>
       <GetProfession/>
+      <Partner/>
     </>
   )
 }

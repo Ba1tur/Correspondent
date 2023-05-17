@@ -47,6 +47,7 @@
           text-align: center;
           color: #ffffff;
           opacity: 0.8;
+          z-index: -1;
         }
       }
     }
@@ -111,51 +112,50 @@
   }
 }
 
-
 @media screen and (max-width: 600px) {
-    .container {
-      .content {
-        h1 {
-          font-size: 38px;
-        }
-        .cards {
-          .card {
-            img {
-              width: 100px;
-              height: 100px;
-            }
-            h2 {
-              font-size: 22px;
-            }
-            p {
-              font-size: 16px;
-            }
+  .container {
+    .content {
+      h1 {
+        font-size: 38px;
+      }
+      .cards {
+        .card {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          h2 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 16px;
           }
         }
       }
     }
   }
+}
 
-  @media screen and (max-width: 425px) {
-    .container {
-      .content {
-        h1 {
-          font-size: 28px;
-        }
-        .cards {
-          .card {
-            img {
-              width: 100px;
-              height: 100px;
-            }
-            h2 {
-              font-size: 20px;
-            }
-            p {
-              font-size: 14px;
-            }
+@media screen and (max-width: 425px) {
+  .container {
+    .content {
+      h1 {
+        font-size: 28px;
+      }
+      .cards {
+        .card {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
           }
         }
       }
     }
   }
+}
