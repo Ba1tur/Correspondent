@@ -1,0 +1,53 @@
+﻿.hero {
+  background-image: url(../../public/hero_back.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .content {
+      h1 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 140%;
+        color: #ffffff;
+      }
+      .time {
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+        .block {
+          width: 102px;
+          height: 112px;
+          background: #121212;
+          padding: 20px 30px;
+          h1 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 140%;
+            color: #ffffff;
+          }
+          h2 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #ffffff;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+}
