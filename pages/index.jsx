@@ -4,6 +4,8 @@ import styles from '@/styles/Home.module.css'
 import About from '@/components/About/About'
 import GetProfession from '@/components/GetProfession/GetProfession'
 import Partner from '@/components/Partner/Partner'
+import TeamLeaders from '@/components/TeamLeaders/TeamLeaders'
+import TrainingProgram from '@/components/TrainingProgram/TrainingProgram'
 
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <About/>
       <GetProfession/>
       <Partner/>
+      <TeamLeaders/>
+      <TrainingProgram/>
     </>
   )
 }
