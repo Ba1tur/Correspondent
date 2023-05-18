@@ -9,10 +9,11 @@ import { motion } from 'framer-motion';
 const Header = () => {
 
 	const useBodyScrollLock = () => {
-		const bodyStyle = document.body.style;
 		const [isLocked, setIsLocked] = useState(null);
 
 		useEffect(() => {
+			const bodyStyle = document.body.style;
+
 			bodyStyle.overflow = isLocked ? "hidden" : null;
 		}, [isLocked]);
 
@@ -125,7 +126,7 @@ const Header = () => {
 								hidden: { scale: 0 },
 								visible: { scale: 1 },
 							}}
-							onClick={() => {setNav(!nav), setIsLocked(!isLocked)}} className={s.mobile_btn}>
+							onClick={() => { setNav(!nav), setIsLocked(!isLocked) }} className={s.mobile_btn}>
 							{nav ? <AiOutlineClose size={30} color='white' /> : <AiOutlineMenu size={30} color='white' />}
 						</motion.div>
 					</div>
