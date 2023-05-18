@@ -40,7 +40,7 @@ const Header = () => {
 								visible: { scale: 1 },
 							}}
 
-							href="/"><Image src={logo} alt="logo" /></motion.a>
+							href="#"><Image src={logo} alt="logo" /></motion.a>
 						<ul className={nav ? cn(s.header_nav, s.active) : s.header_nav}>
 							<motion.li
 
