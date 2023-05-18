@@ -1,34 +1,109 @@
 import s from './Status.module.scss'
+import { motion } from 'framer-motion'
 
 const Status = () => {
+  const variants = {
+    init: {scale: 0},
+    inView: {scale: 1, transition: {duration: 0.8}},
+    hover: {scale: 1.1}
+  }
   return (  
     <>
       <section className={s.container}>
         <div className={s.content}>
           <div className={s.left_block}>
-            <button className={s.btn}>Заказать курс</button>
+            <motion.button 
+              className={s.btn}
+              variants={variants}
+              initial='init'
+              whileInView='inView'
+              whileHover='hover'
+            >
+              Заказать курс
+            </motion.button>
             <div className={s.status_data}>
               <div>
-                <p className={s.text}>Учеников всего:</p>
-                <p className={s.text}>Успешно закончили курс:</p>
+                <motion.p 
+                  className={s.text}
+                  variants={variants}
+                  initial='init'
+                  whileInView='inView'
+                >
+                  Учеников всего:
+                </motion.p>
+                <motion.p 
+                  className={s.text}
+                  variants={variants}
+                  initial='init'
+                  whileInView='inView'
+                >
+                  Успешно закончили курс:
+                </motion.p>
               </div>
               <div>
-                <span className={s.number}>200</span>
-                <span className={s.number}>190</span>
+                <motion.span 
+                  className={s.number}
+                  variants={variants}
+                  initial='init'
+                  whileInView='inView'
+                >
+                  200
+                </motion.span>
+                <motion.span 
+                  className={s.number}
+                  variants={variants}
+                  initial='init'
+                  whileInView='inView'
+                >
+                  190
+                </motion.span>
               </div>
             </div>
           </div>
           <div className={s.rigth_block}>
             <div className={s.heading}>
-              <p className={s.text}>Заработано учениками:</p>
-              <span className={s.number}>400 000₽</span>
+              <motion.p 
+                className={s.text}
+                variants={variants}
+                initial='init'
+                whileInView='inView'
+              >
+                Заработано учениками:
+              </motion.p>
+              <motion.span 
+                className={s.number} 
+                variants={variants}
+                initial='init'
+                whileInView='inView'
+              >
+                400 000₽
+              </motion.span>
             </div>
-            <div className={s.range}>
+            <motion.div 
+              className={s.range}
+              variants={variants}
+              initial='init'
+              whileInView='inView'
+            >
               <span className={s.range_num}></span>
-            </div>
+            </motion.div>
             <div className={s.range_inteval}>
-              <p className={s.text}>0</p>
-              <p className={s.text}>1 000 000₽</p>
+              <motion.p 
+                className={s.text}
+                variants={variants}
+                initial='init'
+                whileInView='inView'
+              >
+                0
+              </motion.p>
+              <motion.p 
+                className={s.text}
+                variants={variants}
+                initial='init'
+                whileInView='inView'
+              >
+                1 000 000₽
+              </motion.p>
             </div>
           </div>
         </div>
