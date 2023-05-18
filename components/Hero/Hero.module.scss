@@ -43,11 +43,45 @@
             font-size: 16px;
             line-height: 140%;
             text-align: center;
-            color: #ffffff;
-            opacity: 0.4;
+            color: rgb(255, 255, 255 , 0.5);
           }
         }
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 830px) {
+  .content {
+    h1{
+      font-size: 50px !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  .content {
+    h1{
+      font-size: 40px !important;
+    }
+  }
+  .time{
+    flex-wrap: wrap !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    h1{
+      font-size: 30px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .block {
+    width: 43% !important;
   }
 }
