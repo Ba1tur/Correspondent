@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from 'framer-motion'
 import s from './TeamLeaders.module.scss'
 
 const mogData = [
@@ -23,10 +24,18 @@ const mogData = [
 ]
 
 const TeamLeaders = () => {
+  const variants = {
+    init: {scale: 0},
+    inView: {scale: 1, transition: {duration: 0.5}}
+  } 
   return ( 
     <section className={s.team_lead}>
       <div className={s.container}>
-        <div className={s.heading}>
+        <motion.div 
+          initial={{opacity: 0, x: -100}}
+          whileInView={{opacity: 1, x: 0, transition: {duration: 1}}}
+          className={s.heading}
+        >
           <Image 
             src='/logo.svg' 
             width={90} 
@@ -35,20 +44,45 @@ const TeamLeaders = () => {
             style={{rotate: '180deg'}} 
           />
           <h2>Ваши преподаватели</h2>
-        </div>
+        </motion.div>
         <div className={s.users_cards}>
           {mogData.map(({spec, profileImg, id, fullname}) => (
             <div key={id} className={s.user_card}>
-              <Image 
-                src={profileImg} 
-                width={190} 
-                height={190} 
-                alt='profile'
-                style={{borderRadius: '50%'}} 
+              <motion.div 
+                initial={{rotate: 200, scale: 0.5}}
+                whileInView={{rotate: 0, scale: 1, transition: {duration: 0.8}}}
+                whileHover={{scale: 1.1}}
+              >
+                <Image 
+                  src={profileImg} 
+                  width={190} 
+                  height={190} 
+                  alt='profile'
+                  style={{borderRadius: '50%'}} 
                 />
-              <h6 className={s.username}>{fullname}</h6>
-              <span className={s.spec}>{spec}</span>
-              <button className={s.btn}>Биография</button>
+              </motion.div>
+              <motion.h6
+                variants={variants}
+                whileInView='inView'
+                initial='init' 
+                className={s.username}
+              >
+                {fullname}
+              </motion.h6>
+              <motion.span 
+                variants={variants}
+                whileInView='inView'
+                initial='init'
+                className={s.spec}
+              >
+                {spec}
+              </motion.span>
+              <motion.button 
+                className={s.btn}
+                whileHover={{scale: 1.1, transition: {duration: 0.3}}}
+              >
+                Биография
+              </motion.button>
             </div>
           ))}
         </div>

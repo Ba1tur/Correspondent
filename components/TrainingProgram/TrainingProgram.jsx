@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import s from './TrainingProgram.module.scss'
 
 const mogData = [
@@ -31,24 +32,50 @@ const mogData = [
     text: 'Красивая часть курса, которая помогает в успехе',
   },
 ]
-const TrainingProgram = () => {
+const TrainingProgram = () => { 
+  const variants = {
+    init: {scale: 0},
+    inView: {scale: 1, transition: {duration: 0.5}}
+  } 
   return ( 
     <>
       <section className={s.training_program}>
-        <Image src='/logo.svg' width={90} height={45} alt='logo' />
-        <h2 className={s.heading}>Программа обучения</h2>
-        <p className={s.description}>
+        <motion.div 
+          whileInView={{scale: 1, transition: {duration: 0.5}}}
+          initial={{scale: 0}}
+        >
+          <Image src='/logo.svg' width={90} height={45} alt='logo' />
+        </motion.div>
+        <motion.h2 
+          variants={variants}
+          whileInView='inView'
+          initial='init' 
+          className={s.heading}
+        >
+          Программа обучения
+        </motion.h2>
+        <motion.p 
+          variants={variants}
+          whileInView='inView'
+          initial='init' 
+          className={s.description}
+        >
           Больше 90% учеников прошли полный курс и смогли <br /> собрать свой первый компьютер
-        </p>
+        </motion.p>
         <div className={s.timeline}>
           {mogData.map(({label, text}) => (
-            <div key={label} className={s.timeline_item}>
+            <motion.div 
+              whileInView={{ y: 0, opacity: 1, transition: {duration: 1, type: 'spring'} }}
+              initial={{ y: 60, opacity: 0.5}}
+              key={label} 
+              className={s.timeline_item}
+            >
               <div className={s.time_content}>
                 <span className={s.time_label}>{label}</span>
                 <p className={s.time_text}>{text}</p>
               </div>
               <span className={s.arrow}></span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
