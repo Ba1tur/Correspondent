@@ -23,3 +23,8 @@ html {
  ol, ul {
 	list-style: none;
  }
+
+
+ body .active{
+	overflow-y: hidden;
+ }

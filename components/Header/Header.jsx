@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './Header.module.scss'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import cn from "classnames";
@@ -8,7 +8,21 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
 
+	const useBodyScrollLock = () => {
+		const bodyStyle = document.body.style;
+		const [isLocked, setIsLocked] = useState(null);
+
+		useEffect(() => {
+			bodyStyle.overflow = isLocked ? "hidden" : null;
+		}, [isLocked]);
+
+		return [isLocked, setIsLocked];
+	};
+
 	const [nav, setNav] = useState(false);
+
+	const [isLocked, setIsLocked] = useBodyScrollLock();
+
 
 	return (
 		<>
@@ -103,15 +117,15 @@ const Header = () => {
 								visible: { scale: 1 },
 							}}
 							className={s.header_btn}>Зайти в кабинет</motion.button>
-						<motion.div 
-						    initial="hidden"
+						<motion.div
+							initial="hidden"
 							transition={{ duration: 0.7 }}
 							whileInView="visible"
 							variants={{
-							  hidden: { scale: 0 },
-							  visible: { scale: 1 },
+								hidden: { scale: 0 },
+								visible: { scale: 1 },
 							}}
-						onClick={() => setNav(!nav)} className={s.mobile_btn}>
+							onClick={() => {setNav(!nav), setIsLocked(!isLocked)}} className={s.mobile_btn}>
 							{nav ? <AiOutlineClose size={30} color='white' /> : <AiOutlineMenu size={30} color='white' />}
 						</motion.div>
 					</div>
