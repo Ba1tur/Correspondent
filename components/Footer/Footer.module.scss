@@ -8,7 +8,7 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 40px;
     h1 {
       font-family: "Roboto";
       font-style: normal;
@@ -30,7 +30,6 @@
     }
     form {
       display: flex;
-
       input {
         border: none;
         outline: none;
@@ -55,6 +54,14 @@
         width: 160px;
         height: 44px;
       }
+      button:hover {
+        background: linear-gradient(94.78deg, #e8392c 11.19%, #5d055f 93.72%);
+        transition: 1s;
+      }
+    }
+    .errors {
+      color: red;
+      margin-top: -30px;
     }
     .soc_icons {
       display: flex;
