@@ -29,7 +29,7 @@ const Footer = () => {
 	};
 
 	return (
-		<div id='contacts' className={s.container}>
+		<div  className={s.container}>
 			<div className={s.content}>
 				<motion.h1
 					initial="hidden"
