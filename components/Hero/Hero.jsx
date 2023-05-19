@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Hero = () => {
     return (
         <>
-            <div className={s.hero}>
+            <div id="hero" className={s.hero}>
                 <div className={s.container}>
                     <div className={s.content}>
                         <motion.h1

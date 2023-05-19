@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div className={s.container}>
+        <div id="about" className={s.container}>
             <div className={s.content}>
                 <motion.div
                     initial="hidden"

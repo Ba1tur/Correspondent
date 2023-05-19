@@ -76,6 +76,7 @@
         height: 50px;
         border-radius: 50%;
         background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+        cursor: pointer;
         a {
           img {
             display: flex;
@@ -83,6 +84,9 @@
             height: 24px;
           }
         }
+      }
+      .soc:hover {
+        background: linear-gradient(94.26deg, #7429cb 9.51%, #341add 90.23%);
       }
     }
     h2 {

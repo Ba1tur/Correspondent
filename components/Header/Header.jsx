@@ -24,6 +24,35 @@ const Header = () => {
 
 	const [isLocked, setIsLocked] = useBodyScrollLock();
 
+	const about = (event) => {
+		event.preventDefault();
+		const targetElement = document.getElementById('about');
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
+	const raspisaniye = (event) => {
+		event.preventDefault();
+		const targetElement = document.getElementById('raspisaniye');
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+	const teachers = (event) => {
+		event.preventDefault();
+		const targetElement = document.getElementById('teachers');
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+	const contacts = (event) => {
+		event.preventDefault();
+		const targetElement = document.getElementById('contacts');
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 
 	return (
 		<>
@@ -63,7 +92,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Курсы</a></motion.li>
+							><a href="#" onClick={about}>Курсы</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -74,7 +103,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Расписание</a></motion.li>
+							><a href="#raspisaniye" onClick={raspisaniye}>Расписание</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -85,7 +114,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Преподаватели</a></motion.li>
+							><a href="#teachers" onClick={teachers}>Преподаватели</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -96,7 +125,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Рассылка</a></motion.li>
+							><a href="#contacts" onClick={contacts}>Рассылка</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -107,7 +136,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Контакты</a></motion.li>
+							><a href="#contacts" onClick={contacts}>Контакты</a></motion.li>
 						</ul>
 						<motion.button
 							initial="hidden"

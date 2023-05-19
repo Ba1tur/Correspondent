@@ -39,7 +39,7 @@ const TrainingProgram = () => {
   } 
   return ( 
     <>
-      <section className={s.training_program}>
+      <section id='raspisaniye' className={s.training_program}>
         <motion.div 
           whileInView={{scale: 1, transition: {duration: 0.5}}}
           initial={{scale: 0}}

@@ -29,7 +29,7 @@ const TeamLeaders = () => {
     inView: {scale: 1, transition: {duration: 0.5}}
   } 
   return ( 
-    <section className={s.team_lead}>
+    <section id="teachers" className={s.team_lead}>
       <div className={s.container}>
         <motion.div 
           initial={{opacity: 0, x: -100}}
