@@ -1,4 +1,6 @@
 .training_program {
+  max-width: 1920px;
+  width: 100%;
   background-color: black;
   display: flex;
   align-items: center;
@@ -6,7 +8,7 @@
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-
+  padding-top: 60px;
   .heading {
     font-weight: 700;
     font-size: 48px;
@@ -83,16 +85,21 @@
         width: 170px;
         .time_content {
           .time_label {
-            font-size: 12px;
+            font-size: 11px;
             line-height: 20px;
           }
           .time_text {
-            font-size: 15px;
+            font-size: 12px;
             line-height: 23px;
           }
         }
         .arrow {
           width: 20px;
+        }
+        &:nth-child(even) {
+          text-align: left;
+          margin-left: -12px !important;
+          flex-direction: row-reverse;
         }
         &:nth-child(odd) {
           translate: -170px;
