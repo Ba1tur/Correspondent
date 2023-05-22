@@ -15,13 +15,13 @@ const Start = () => {
                             className={s.tag}
                         >
                             <img src="/ico.png" alt="" />
-                            <h1>Быстрый старт</h1>
+                            <h1>Lorem, ipsum.</h1>
                         </motion.div>
                         <motion.p
                             initial={{opacity: 0, y: 100}}
                             whileInView={{opacity: 1, y: 0, transition: {duration: 1}}}
                         >
-                            Больше 90% учеников прошли полный курс и смогли 
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             <br /> 
                             собрать свой первый компьютер
                         </motion.p>

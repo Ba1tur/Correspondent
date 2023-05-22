@@ -19,7 +19,7 @@ const Status = () => {
               whileInView='inView'
               whileHover='hover'
             >
-              Заказать курс
+              Lorem, ipsum.
             </motion.button>
             <div className={s.status_data}>
               <div>
@@ -29,7 +29,7 @@ const Status = () => {
                   initial='init'
                   whileInView='inView'
                 >
-                  Учеников всего:
+                  Lorem, ipsum.
                 </motion.p>
                 <motion.p 
                   className={s.text}
@@ -37,7 +37,7 @@ const Status = () => {
                   initial='init'
                   whileInView='inView'
                 >
-                  Успешно закончили курс:
+                  Lorem, ipsum dolor bs.
                 </motion.p>
               </div>
               <div>
@@ -68,7 +68,7 @@ const Status = () => {
                 initial='init'
                 whileInView='inView'
               >
-                Заработано учениками:
+                Lorem, ipsum.
               </motion.p>
               <motion.span 
                 className={s.number} 

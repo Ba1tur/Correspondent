@@ -5,31 +5,31 @@ import s from './TrainingProgram.module.scss'
 const mogData = [
   {
     label: 'Неделя №1',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
   {
     label: 'Неделя №1',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
   {
     label: 'Неделя №2',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
   {
     label: 'Неделя №3',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
   {
     label: 'Неделя №4',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
   {
     label: 'Неделя №5',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
   {
     label: 'Неделя №6',
-    text: 'Красивая часть курса, которая помогает в успехе',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
   },
 ]
 const TrainingProgram = () => { 
@@ -52,7 +52,7 @@ const TrainingProgram = () => {
           initial='init' 
           className={s.heading}
         >
-          Программа обучения
+          Lorem, ipsum.
         </motion.h2>
         <motion.p 
           variants={variants}
@@ -60,7 +60,7 @@ const TrainingProgram = () => {
           initial='init' 
           className={s.description}
         >
-          Больше 90% учеников прошли полный курс и смогли <br /> собрать свой первый компьютер
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Lorem ipsum dolor sit.
         </motion.p>
         <div className={s.timeline}>
           {mogData.map(({label, text}) => (

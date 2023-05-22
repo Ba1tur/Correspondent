@@ -39,7 +39,7 @@ const Footer = () => {
 						hidden: { scale: 0 },
 						visible: { scale: 1 },
 					}}
-				>Статьи каждую неделю</motion.h1>
+				>Lorem, ipsum dolor.</motion.h1>
 				<motion.p
 					initial="hidden"
 					transition={{ duration: 0.7 }}
@@ -48,7 +48,7 @@ const Footer = () => {
 						hidden: { scale: 0 },
 						visible: { scale: 1 },
 					}}
-				>Больше 90% учеников прошли полный курс и смогли <br /> собрать свой первый компьютер</motion.p>
+				>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Lorem ipsum dolor sit.</motion.p>
 				<motion.form
 					onSubmit={handleSubmit}
 					initial="hidden"
@@ -127,17 +127,7 @@ const Footer = () => {
 							<img src="./instagram.png" alt="instagram" />
 						</a>
 					</motion.div>
-
 				</div>
-				<motion.h2
-					initial="hidden"
-					transition={{ duration: 0.7 }}
-					whileInView="visible"
-					variants={{
-						hidden: { scale: 0 },
-						visible: { scale: 1 },
-					}}
-				>Templates #18. More on Figma.info</motion.h2>
 			</div>
 		</div>
 	);

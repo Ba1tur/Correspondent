@@ -6,20 +6,20 @@ const mogData = [
   {
     id: 1,
     profileImg: '/profile_1.png',
-    fullname: 'Дмитрий Иванов',
-    spec: 'Специалист по видеокартам'
+    fullname: 'Lorem, ipsum',
+    spec: 'Lorem, ipsum dolor.'
   },
   {
     id: 2,
     profileImg: '/profile_2.png',
-    fullname: 'Дмитрий Иванов',
-    spec: 'Специалист по видеокартам'
+    fullname: 'Lorem, ipsum',
+    spec: 'Lorem, ipsum dolor.'
   },
   {
     id: 3,
     profileImg: '/profile_3.png',
-    fullname: 'Дмитрий Иванов',
-    spec: 'Специалист по видеокартам'
+    fullname: 'Lorem, ipsum',
+    spec: 'Lorem, ipsum dolor.'
   }
 ]
 
@@ -43,7 +43,7 @@ const TeamLeaders = () => {
             alt='logo' 
             style={{rotate: '180deg'}} 
           />
-          <h2>Ваши преподаватели</h2>
+          <h2>Lorem  ipsum</h2>
         </motion.div>
         <div className={s.users_cards}>
           {mogData.map(({spec, profileImg, id, fullname}) => (
@@ -81,7 +81,7 @@ const TeamLeaders = () => {
                 className={s.btn}
                 whileHover={{scale: 1.1, transition: {duration: 0.3}}}
               >
-                Биография
+                Lorem
               </motion.button>
             </div>
           ))}

@@ -28,7 +28,7 @@ const About = () => {
                             visible: { scale: 1 },
                         }}
 
-                    >Чем мы занимаемся?</motion.h1>
+                    >Lorem, ipsum dolor.?</motion.h1>
                     <motion.p
 
                         initial="hidden"

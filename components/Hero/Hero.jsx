@@ -13,8 +13,8 @@ const Hero = () => {
                             whileInView={{scale: 1, transition: {duration: 1} }}
                             initial={{scale: 0}} 
                         >
-                            Первый курс <br />
-                            по компьютерной сборке
+                            Lorem. <br />
+                            Lorem, ipsum dolor.
                         </motion.h1>
                         <div className={s.time}>
                             {time.map((data) => (

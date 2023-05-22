@@ -43,7 +43,6 @@ const Header = () => {
 							href="#"><Image src={logo} alt="logo" /></motion.a>
 						<ul className={nav ? cn(s.header_nav, s.active) : s.header_nav}>
 							<motion.li
-
 								initial="hidden"
 								transition={{ duration: 0.7 }}
 								whileInView="visible"
@@ -52,7 +51,17 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Главная</a></motion.li>
+							><a href="#">Lorem</a></motion.li>
+							<motion.li
+								initial="hidden"
+								transition={{ duration: 0.7 }}
+								whileInView="visible"
+								variants={{
+									hidden: { scale: 0 },
+									visible: { scale: 1 },
+								}}
+
+							><a href="#">Lorem</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -63,7 +72,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Курсы</a></motion.li>
+							><a href="#">Lorem</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -74,7 +83,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Расписание</a></motion.li>
+							><a href="#">Lorem</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -85,7 +94,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Преподаватели</a></motion.li>
+							><a href="#">Lorem</a></motion.li>
 							<motion.li
 
 								initial="hidden"
@@ -96,18 +105,7 @@ const Header = () => {
 									visible: { scale: 1 },
 								}}
 
-							><a href="#">Рассылка</a></motion.li>
-							<motion.li
-
-								initial="hidden"
-								transition={{ duration: 0.7 }}
-								whileInView="visible"
-								variants={{
-									hidden: { scale: 0 },
-									visible: { scale: 1 },
-								}}
-
-							><a href="#">Контакты</a></motion.li>
+							><a href="#">Lorem</a></motion.li>
 						</ul>
 						<motion.button
 							initial="hidden"
@@ -117,7 +115,7 @@ const Header = () => {
 								hidden: { scale: 0 },
 								visible: { scale: 1 },
 							}}
-							className={s.header_btn}>Зайти в кабинет</motion.button>
+							className={s.header_btn}> Lorem, ipsum </motion.button>
 						<motion.div
 							initial="hidden"
 							transition={{ duration: 0.7 }}
