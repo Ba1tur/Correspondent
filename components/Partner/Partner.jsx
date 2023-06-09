@@ -23,7 +23,7 @@ const Partner = () => {
                     }}
 
                     className={s.name}>
-                    <Image src={icon} alt="icon_partner" />
+                    <Image src='/logo.png' width={90} height={90} alt="icon_partner" />
                     <h1>Lorem. - lorem2</h1>
                 </motion.div>
                 <div className={s.cards}>

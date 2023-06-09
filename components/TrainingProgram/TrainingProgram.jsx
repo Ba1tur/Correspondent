@@ -44,7 +44,7 @@ const TrainingProgram = () => {
           whileInView={{scale: 1, transition: {duration: 0.5}}}
           initial={{scale: 0}}
         >
-          <Image src='/logo.svg' width={90} height={45} alt='logo' />
+          <Image src='/rem_logo_gradient_png.png' width={520} height={150} alt='logo' />
         </motion.div>
         <motion.h2 
           variants={variants}

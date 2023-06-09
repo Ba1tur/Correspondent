@@ -14,7 +14,7 @@ const Start = () => {
                             whileInView={{opacity: 1, x: 0, transition: {duration: 1}}}
                             className={s.tag}
                         >
-                            <img src="/ico.png" alt="" />
+                            <img src="/logo.png" alt="" />
                             <h1>Lorem, ipsum.</h1>
                         </motion.div>
                         <motion.p

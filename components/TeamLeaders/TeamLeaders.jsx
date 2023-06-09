@@ -37,11 +37,10 @@ const TeamLeaders = () => {
           className={s.heading}
         >
           <Image 
-            src='/logo.svg' 
-            width={90} 
-            height={45} 
+            src='/logo.png' 
+            width={100} 
+            height={100} 
             alt='logo' 
-            style={{rotate: '180deg'}} 
           />
           <h2>Lorem  ipsum</h2>
         </motion.div>
